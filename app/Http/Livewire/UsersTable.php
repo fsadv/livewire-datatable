@@ -14,6 +14,11 @@ class UsersTable extends Component
     public $search = '';
     public $admin = '';
 
+
+    public function delete($id){
+        User::destroy($id);
+    }
+
     public function render()
     {
 
